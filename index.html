@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Peasy</title>
+		<link rel="stylesheet" href="./style.css">
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<div class="top-header-bar">
+			<div id="file-header-bar">
+				<div class="file-header-bar-buttons">
+					<button onclick="downloadFile();">Download</button>
+					<label for="file-input">Open HTML File</label>
+					<input type="file" id="file-input" style="display: none" />
+					<button onclick="deleteFile();">Delete</button>
+					<button style="float: right; width: 50px; border: none;" onclick="openNav();">&#9776</button>
+					<button style="float: right; width: 100px; border: none; margin-right: 3px;" onclick="openHTML();">Edit HTML</button>
+				</div>
+			</div>
+		</div>
+		<div class="main" id="the-main">
+			<div id="canvas-tab">
+				<br>
+			</div>
+			<div id="canvas-area">
+			</div>
+		</div>
+		<div id="the-creator-nav" class="creator-nav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		</div>
+		<div id="the-element-nav" class="element-nav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeElements()">&times;</a>
+			<button onclick="addUserElement();">Add Element</button>
+			<br>
+			<br>
+		</div>
+		<div id="the-html-nav" class="html-nav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeHTML()">&times;</a>
+			<h1 class="introtag">HTML</h1>
+			<div id="the-html-nav-inner" onkeyup="htmlCode = this.innerText; document.getElementById('canvas-area').innerHTML = htmlCode; " contenteditable>
+			</div>
+		</div>
+		<div id="the-choice-nav" class="choice-nav">
+			<center><h1 class="introtag">Select</h1></center>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeChoice()">&times;</a>
+			<div id="the-choice-nav-inner">
+			</div>
+		</div>
+		<div id="the-style-nav" class="style-nav">
+			<h1 class="introtag">CSS</h1>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeStyle()">&times;</a>
+			<div id="the-style-nav-search">
+			</div>
+			<div id="the-style-nav-inner">
+			</div>
+		</div>
+		<div id="the-attr-nav" class="attr-nav">
+			<h1 class="introtag">Attributes</h1>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeAttributes()">&times;</a>
+			<div id="the-attr-nav-inner">
+			</div>
+		</div>
+	</body>
+</html>
