@@ -4,6 +4,13 @@ Make web developing easy.
 Make it Peasy.
 
 Infinity Peasy facilitates the process of web developing for HTML/JS/CSS programmers. **Simple web pages** can be created within **10 minutes** and more complex websites can be programmed directly with the open HTML editor interface option given by this application.
+<hr>
+
+**Note: This repo now has a sibling; Version 1.0.0 of Infinity p5, a p5.js editor, has been released: [Repo: Infinity p5](https://github.com/amolgorithm/infinity-p5)**
+<br>
+**Consider trying out all editors from the Infinity series!**
+
+<hr>
 
 ## Instantaneous Real-time Preview Of Code
 Peasy has an instantaneous preview of the code created. No need to reload anything to view each time your code is modified.
